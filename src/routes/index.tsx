@@ -1,6 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState, useCallback } from "react";
-import { ChevronLeft, ChevronRight, Maximize2, Grid3x3, Download, Radio } from "lucide-react";
+import { ChevronLeft, ChevronRight, Maximize2, Grid3x3, Download, Radio, FileText } from "lucide-react";
 import { ScaledSlide } from "@/components/deck/ScaledSlide";
 import { slides } from "@/components/deck/slides";
 
@@ -95,6 +95,12 @@ function Deck() {
           </div>
         </div>
         <div className="flex items-center gap-2">
+          <Link
+            to="/one-pager"
+            className="glass px-3 py-2 rounded-lg text-xs flex items-center gap-2 hover:border-electric/50 transition"
+          >
+            <FileText className="w-3.5 h-3.5" /> One-Pager
+          </Link>
           <a
             href="/fastcast-x-onyx.pdf"
             download="Fastcast x Onyx.pdf"
