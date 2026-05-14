@@ -84,7 +84,7 @@ function Deck() {
   return (
     <div className="h-screen bg-background flex flex-col overflow-hidden">
       {/* Top bar */}
-      <header className="h-[70px] shrink-0 flex items-center justify-between px-6 border-b border-border">
+      <header className="h-[70px] shrink-0 flex items-center justify-between px-6">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-lg bg-electric-gradient flex items-center justify-center">
             <Radio className="w-4 h-4 text-background" />
