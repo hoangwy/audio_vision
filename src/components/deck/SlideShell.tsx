@@ -15,8 +15,7 @@ export function SlideShell({ children, variant = "default", className = "" }: Pr
         : "bg-[oklch(0.14_0.012_250)]";
   return (
     <div className={`relative w-full h-full ${bg} text-foreground overflow-hidden grain ${className}`}>
-      <div className="absolute inset-0 grid-bg opacity-30 pointer-events-none" />
-      <div className="absolute -top-60 left-1/2 -translate-x-1/2 w-[1400px] h-[700px] rounded-full bg-[radial-gradient(ellipse_at_center,oklch(0.6_0.1_235/0.28),transparent_70%)] blur-3xl pointer-events-none" />
+      <div className="absolute inset-x-0 top-6 bottom-0 grid-bg opacity-30 pointer-events-none" />
       <div className="absolute -bottom-60 left-1/2 -translate-x-1/2 w-[1600px] h-[700px] rounded-full bg-[radial-gradient(ellipse_at_center,oklch(0.86_0.09_65/0.22),transparent_70%)] blur-3xl pointer-events-none" />
       
       <div className="relative w-full h-full">{children}</div>

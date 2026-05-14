@@ -82,51 +82,9 @@ function Deck() {
   }
 
   return (
-    <div className="h-screen bg-background flex flex-col overflow-hidden">
-      {/* Top bar */}
-      <header className="h-[70px] shrink-0 flex items-center justify-between px-6">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg bg-electric-gradient flex items-center justify-center">
-            <Radio className="w-4 h-4 text-background" />
-          </div>
-          <div>
-            <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Fastcast × Onyx</div>
-            <div className="text-sm font-medium">{slides[i].title}</div>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <Link
-            to="/one-pager"
-            className="glass px-3 py-2 rounded-lg text-xs flex items-center gap-2 hover:border-electric/50 transition"
-          >
-            <FileText className="w-3.5 h-3.5" /> One-Pager
-          </Link>
-          <a
-            href="/fastcast-x-onyx.pdf"
-            download="Fastcast x Onyx.pdf"
-            className="glass px-3 py-2 rounded-lg text-xs flex items-center gap-2 hover:border-electric/50 transition"
-          >
-            <Download className="w-3.5 h-3.5" /> PDF
-          </a>
-          <button
-            onClick={() => setGrid(true)}
-            className="glass px-3 py-2 rounded-lg text-xs flex items-center gap-2 hover:border-electric/50 transition"
-            title="Grid (G)"
-          >
-            <Grid3x3 className="w-3.5 h-3.5" /> Grid
-          </button>
-          <button
-            onClick={() => document.documentElement.requestFullscreen?.()}
-            className="glass px-3 py-2 rounded-lg text-xs flex items-center gap-2 hover:border-electric/50 transition"
-            title="Present (F)"
-          >
-            <Maximize2 className="w-3.5 h-3.5" /> Present
-          </button>
-        </div>
-      </header>
-
+    <div className="h-screen bg-background overflow-hidden">
       {/* Slide stage */}
-      <main className="h-[calc(100vh-70px)] relative overflow-hidden">
+      <main className="h-full relative overflow-hidden">
         <ScaledSlide><Active /></ScaledSlide>
 
         {/* Nav controls */}

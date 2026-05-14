@@ -42,14 +42,14 @@ export function ScaledSlide({ children, className = "" }: Props) {
       className={`relative w-full h-full overflow-hidden ${className}`}
     >
       <div
-        className="slide-content absolute left-1/2 top-1/2"
+        className="slide-content absolute left-1/2 top-0"
         style={{
           width: 1920,
           height: 1080,
           marginLeft: -960,
-          marginTop: -540,
+          marginTop: 0,
           transform: `scale(${scale})`,
-          transformOrigin: "center center",
+          transformOrigin: "top center",
         }}
       >
         {children}
