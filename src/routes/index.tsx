@@ -150,13 +150,6 @@ function Deck() {
           </button>
         </div>
 
-        {/* Progress bar */}
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-foreground/5">
-          <div
-            className="h-full bg-electric-gradient transition-all duration-500"
-            style={{ width: `${((i + 1) / slides.length) * 100}%` }}
-          />
-        </div>
       </main>
     </div>
   );
