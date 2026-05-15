@@ -37,8 +37,25 @@ import {
 /* ───────────────────────── 1. COVER ───────────────────────── */
 export function SlideCover() {
   return (
-    <SlideShell>
+    <SlideShell variant="hero">
       <div className="absolute inset-0 flex flex-col justify-between px-24 py-20">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-xl bg-electric-gradient flex items-center justify-center glow-electric">
+              <Radio className="w-6 h-6 text-background" />
+            </div>
+            <div>
+              <div className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
+                Fastcast / DNN
+              </div>
+              <div className="text-lg font-medium">The Daily News Now!</div>
+            </div>
+          </div>
+          <div className="font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
+            Partnership Proposal · 2026
+          </div>
+        </div>
+
         <div className="space-y-7">
           <div className="flex items-center gap-4">
             <div className="px-4 py-2 rounded-full glass text-xs font-mono uppercase tracking-[0.3em] text-electric">
